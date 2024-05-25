@@ -1,0 +1,550 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+li{
+    list-style: none;/* bỏ chấm tròn của Others*/
+}
+body{/* chỉnh màu background menu (màu ô chứa chữ ko thay đổi)*/
+    background-color: white;
+}
+header{/* chỉnh menu*/
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    margin-top:0px; 
+    position:fixed; 
+    top:0;
+    left:0;
+    right:0;
+    background-color: #ffffff;
+    z-index: 1;
+    box-shadow: 2px 2px 2px rgba(241, 241, 241, 0.873);
+}
+
+
+
+/* ---------------chỉnh logo----------------*/
+header img{
+    width:150px;
+    cursor:pointer;
+}
+
+
+
+/* ---------------chỉnh other (search,shopping,user)----------------*/
+.other{
+    display:flex;
+}
+.other >li{
+    padding:0 12px;
+}
+.other >li:first-child{
+    position:relative;
+}
+.other >li:first-child input{/* chỉnh ô tìm kiếm*/
+    width:100%;/* chỉnh  độ dài ô tìm kiếm*/
+    height:150%;/* chỉnh độ rộng ô tìm kiếm*/
+    margin-top: -20px;
+    margin-left: -20px;
+    border:10;
+}
+.other >li:first-child i{
+    position:absolute;
+    right:10px;/* chỉnh vị trí  Icon search */
+}
+
+
+/* ---------------------------chỉnh Menu-------------------------------*/
+#menu {
+    list-style:none;
+    display: flex;
+}
+
+#menu ul{
+    list-style-type: none;
+    background:#ffffff;   /*  chỉnh màu ô chứa chữ */
+    text-align: center;
+}
+#menu ul li{
+    color:#0f0f0f;
+    display:inline-table;
+    width:120px;/* khoảng cách giữa các chữ trong menu */
+    height:30px;/* khoảng cách giữa menu và banner*/
+    line-height: 50px;/* khoảng cách giữa menu và thanh tìm kiếm*/
+    position:relative;   /* chỉnh khung menu xuống thành 1 hàng dọc */
+ 
+}
+#menu ul li a{
+    color:#060606;/* chỉnh màu chữ trên thanh menu */
+    text-decoration: none;
+    display:block;
+    font-size:17px;/* chỉnh cỡ chữ trên thanh menu*/
+}
+#menu ul li a:hover{
+    background:rgba(123, 123, 123, 0.262);/* chỉnh màu Ô lúc dê chuột vào */
+    color:#333;/* chỉnh màu chữ trong Ô lúc dê chuột vào */
+    
+}
+#menu ul li >.sub-menu{
+    display: none;
+    position: absolute;
+    background-color:  #ffffff;/* chỉnh màu Ô đa cấp lúc dê chuột vào */
+    z-index: 1;
+    list-style: none;
+}
+
+#menu ul li:hover .sub-menu{
+    display:block;
+}
+
+
+
+/* ------------------------Banner one piece------------------------------*/
+#banner1 {
+    width: 100%;
+    
+    background-image :url("banner onepiece.png");
+    background-size:cover;
+    height: 680px;/*chỉnh size banner*/
+    margin-top:70px;
+    display: flex;
+    padding:0px 133px;
+    position:relative;
+}
+#banner1 .box-left ,#banner .box-right {
+    width: 50%;
+}
+
+
+#banner1 .box-left button {/*nút buttom mua ngay*/
+    font-size:20px;/*chỉnh size chữ*/
+    width: 170px;/*chỉnh size dài bóng đen*/
+    height: 45px;/*chỉnh size rộng bóng đen*/
+    margin-top:320px;/*chỉnh vị trí buttom lên xuống*/
+    margin-left:-60px;/*chỉnh vị trí buttom trái phải*/
+    background:#1d1a1a;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 200px;
+    transition:0.4s;/*chỉnh tốc độ chuyển màu*/
+}
+#banner1 .box-left button:hover {/*màu sắc khi nhấp vô nút buttom mua ngay*/
+    background:orange;
+}
+
+
+
+/* ------------------------NEW ARRIVALS------------------------------*/
+#wp-products {/*căn nguyên lish new arrival và sản phẩm */
+    padding-top:130px;/*cách banner trên*/
+    padding-bottom: 78px;
+    padding-left:0px;
+    padding-right:0px;/*căn phải với web*/
+}
+
+#wp-products h2 {
+    text-align: center;
+    margin-bottom: 76px;/*căn trên so với chữ new arrival*/
+    font-size:5x;/*size chữ New Arrival*/
+    color:black;
+    margin-left:40px;
+}
+
+
+#list-products {
+    font-size:17px;/*size chữ sản phẩm*/
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#list-products .item {
+    width: 100%px;/*căn trái phải của hình ảnh so với lề*/
+    height: 0px;/*chỉnh khung border sau ảnh*/
+    background:#fafafa;
+    border-radius: 0px;
+    margin-bottom: 460px;/*chỉnh khoảng cách sản phẩm trên so với sản phẩm dưới*/
+}
+
+
+#list-products .item .name {
+    text-align: center;
+    color:rgb(10, 10, 10);
+    font-weight: bold;
+    margin-top:0px;/*chỉnh khoảng cách từ tên so với sản phẩm*/
+}
+
+#list-products .item .price {
+    text-align: center;
+    color:#090909;
+    font-weight: bold;
+    margin-top:0px;/*chỉnh khoảng cách từ giá tiền so với tên sản phẩm*/
+}
+
+
+.list-page {
+    width: 50%;
+    margin:0px auto;
+}
+
+.list-page {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ------------------------Banner SPRING OF THE Y------------------------------*/
+#banner2 {/* banner rồng*/
+    width: 100%;
+    background-image :url("banner rồng2.jpg");
+    background-size:cover;
+    height: 710px;/*chỉnh size banner*/
+    margin-top:-40px;
+    display: flex;
+    padding:0px 133px;
+    position:relative;
+}
+#banner2 .box-left ,#banner .box-right {
+    width: 50%;
+}
+
+#banner2  .box-left h2 {/* chỉnh chữ spring of the Y*/
+    
+    font-size:50px;
+    margin-top:55px;
+    margin-left:409px;
+    width: 100%;
+    padding:0px 30px;   
+    font-family:Tahoma ;
+    color:#AE611D
+}
+
+#banner2 .box-left button {/*nút buttom mua ngay*/
+    font-size:20px;/*chỉnh size chữ*/
+    width: 170px;/*chỉnh size dài bóng đen*/
+    height: 45px;/*chỉnh size rộng bóng đen*/
+    margin-top:460px;/*chỉnh vị trí buttom lên xuống*/
+    margin-left:565px;/*chỉnh vị trí buttom trái phải*/
+    background:#1d1a1a;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 200px;
+    transition:0.4s;/*chỉnh tốc độ chuyển màu*/
+}
+#banner2 .box-left button:hover {/*màu sắc khi nhấp vô nút buttom mua ngay*/
+    background:orange;
+}
+
+
+/* ------------------------Banner LILIWUYN------------------------------*/
+#banner3 {/* banner lilywuyn*/
+    width: 100%;
+    background-image :url("banner liliwuyn2.jpg");
+    background-size:cover;
+    height: 700px;/*chỉnh size banner*/
+    margin-top:-40px;
+    display: flex;
+    padding:0px 133px;
+    position:relative;
+}
+#banner3 .box-left ,#banner .box-right {
+    width: 50%;
+}
+
+#banner3 .box-left button {/*nút buttom mua ngay*/
+    font-size:20px;/*chỉnh size chữ*/
+    width: 170px;/*chỉnh size dài bóng đen*/
+    height: 45px;/*chỉnh size rộng bóng đen*/
+    margin-top:435px;/*chỉnh vị trí buttom lên xuống*/
+    margin-left:565px;/*chỉnh vị trí buttom trái phải*/
+    background:#1d1a1a;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 200px;
+    transition:0.4s;/*chỉnh tốc độ chuyển màu*/
+}
+#banner3 .box-left button:hover {/*màu sắc khi nhấp vô nút buttom mua ngay*/
+    background:orange;
+}
+
+
+
+/* ------------------------WHAT'S HOT------------------------------*/
+
+
+#new {/*căn nguyên lish new arrival và sản phẩm */
+    padding-top:50px;/*cách banner trên*/
+    padding-bottom: 78px;
+    padding-left:0px;
+    padding-right:160px;/*căn phải với web*/
+     
+}
+
+#new h2 {
+    padding-left:175px;
+    text-align: center;
+    margin-bottom: 50px;/*căn trên so với chữ WHAT'S HOT*/
+    font-size:5x;/*size chữ WHAT'S HOT*/
+    color:black;
+    
+}
+
+
+#list-new {
+    font-size:13px;/*size chữ sản phẩm*/
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#list-new .item {
+    width: 100%px;/*căn trái phải của hình ảnh so với lề*/
+    height: 0px;/*chỉnh khung border sau ảnh*/
+    background:#fafafa;
+    border-radius: 0px;
+    margin-bottom: 460px;/*chỉnh khoảng cách sản phẩm trên so với sản phẩm dưới*/
+}
+
+
+#list-new .item .name {
+    text-align: center;
+    color:rgb(10, 10, 10);
+    font-weight: bold;
+    margin-top:20px;/*chỉnh khoảng cách từ tên so với sản phẩm*/
+}
+
+
+.list-page {
+    width: 50%;
+    margin:0px auto;
+}
+
+.list-page {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+#list-new .box-left{
+    text-align: center;
+    margin-top:450px;/*chỉnh lên xuống nút xem thêm */
+    margin-left:-451px;/*chỉnh trái phải nút xem thêm*/
+    
+}
+#list-new .box-left button:hover {/*màu sắc khi nhấp vô nút buttom mua ngay*/
+    background:orange;
+}
+#list-new .box-left button {/*nút buttom mua ngay*/
+    font-size:13px;/*chỉnh size chữ*/
+    width: 90px;/*chỉnh size dài bóng đen*/
+    height: 35px;/*chỉnh size rộng bóng đen*/
+    background:#1d1a1a;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 200px;
+    transition:0.4s;/*chỉnh tốc độ chuyển màu*/
+}
+
+
+
+/* ------------------------Banner 4------------------------------*/
+#banner4 {/* banner sale off*/
+    width: 100%;
+    background-image :url("banner\ saleoff2.jpg");
+    background-size:cover;
+    height: 113px;/*chỉnh size banner*/
+    margin-top:-20px;
+    margin-left:0px;
+    display: flex;
+    padding:0px 133px;
+    position:relative;
+}
+#banner4 .box-left ,#banner .box-right {
+    width: 50%;
+}
+
+#banner4 .box-left button {/*nút buttom mua ngay*/
+    font-size:15px;/*chỉnh size chữ*/
+    width: 190px;/*chỉnh size dài bóng đen*/
+    height: 55px;/*chỉnh size rộng bóng đen*/
+    margin-top:27px;/*chỉnh vị trí buttom lên xuống*/
+    margin-left:670px;/*chỉnh vị trí buttom trái phải*/
+    background:#1d1a1a;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 200px;
+    transition:0.4s;
+}
+#banner4 .box-left button:hover {/*màu sắc khi nhấp vô nút buttom mua ngay*/
+    background:orange;
+}
+
+
+/*----------------FOOTER--------------------*/
+
+footer{
+    background:rgb(0, 0, 0);
+    display:flex;
+    margin-top:0px;
+    justify-content: space-around;
+    margin-bottom:0px;
+    padding-bottom: 20px;   /*chỉnh size background đen */
+    
+}
+footer.col{
+    
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    margin-top: 100p;
+}
+footer h4{   /*chỉnh size chữ H4*/
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    padding-bottom:30px;
+    margin-top:40px;
+    font-weight: bold;
+}
+footer p{  /*chỉnh size chữ P*/
+    color:rgb(255, 255, 255);
+    font-size: 13px;
+    text-decoration:none;
+    margin-bottom:15px;
+
+ 
+}
+footer li{ /*chỉnh icon fb,instagram,youtube*/
+    color:#fff;
+    margin-top: 3px;
+    font-weight: bold;
+    
+   
+}
+
+
+/*------------------------Cartegory----------------------------------------*/
+
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #e3f2fd;
+}
+.container{
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    margin: 80px auto 30px;
+}
+.select-btn{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.select-btn .btn-text{
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+}
+.select-btn .arrow-dwn{
+    display: flex;
+    height: 21px;
+    width: 21px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50%;
+    background: #6e93f7;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.select-btn.open .arrow-dwn{
+    transform: rotate(-180deg);
+}
+.list-items{
+    position: relative;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.select-btn.open ~ .list-items{
+    display: block;
+}
+.list-items .item{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 15px;
+    border-radius: 8px;
+}
+.list-items .item:hover{
+    background-color: #e7edfe;
+}
+.item .item-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+.item .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1.5px solid #c0c0c0;
+    transition: all 0.3s ease-in-out;
+}
+.item.checked .checkbox{
+    background-color: #4070f4;
+    border-color: #4070f4;
+}
+.checkbox .check-icon{
+    color: #fff;
+    font-size: 11px;
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+}
+.item.checked .check-icon{
+    transform: scale(1);
+}
+
