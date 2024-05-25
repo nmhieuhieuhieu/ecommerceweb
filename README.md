@@ -6,7 +6,7 @@ Dự án Bán Quần Áo Cho Giới Trẻ là một nền tảng thương mại 
 
 ## Tính năng chính
 
-- *Danh mục sản phẩm đa dạng*: Quần áo, phụ kiện thời trang, giày dép, v.v.
+- *Danh mục sản phẩm đa dạng*: Quần áo local brand, v.v.
 - *Thiết kế giao diện thân thiện*: Giao diện trực quan, dễ sử dụng, tối ưu hóa cho cả thiết bị di động và máy tính.
 - *Cập nhật xu hướng thời trang*: Thường xuyên cập nhật các bộ sưu tập mới nhất.
 - *Dịch vụ khách hàng*: Tư vấn trực tuyến, chính sách đổi trả linh hoạt.
@@ -37,18 +37,13 @@ cd your-repo-name
 1. Tải và cài đặt XAMPP từ [trang web chính thức](https://www.apachefriends.org/index.html).
 2. Khởi động Apache và MySQL từ bảng điều khiển XAMPP.
 
-### Bước 3: Cấu hình cơ sở dữ liệu
 
-1. Truy cập phpMyAdmin tại http://localhost/phpmyadmin.
-2. Tạo một cơ sở dữ liệu mới với tên shop_quanao.
-3. Import file shop_quanao.sql từ thư mục dự án vào cơ sở dữ liệu vừa tạo.
-
-### Bước 4: Cấu hình dự án
+### Bước 3: Cấu hình dự án
 
 1. Sao chép tất cả các file của dự án vào thư mục htdocs của XAMPP (ví dụ: C:\xampp\htdocs\your-repo-name).
 2. Mở file config.php và cập nhật thông tin kết nối cơ sở dữ liệu nếu cần thiết.
 
-### Bước 5: Chạy dự án
+### Bước 44: Chạy dự án
 
 1. Mở trình duyệt và truy cập http://localhost/your-repo-name.
 2. Trang web của bạn sẽ được hiển thị và bạn có thể bắt đầu duyệt các sản phẩm thời trang.
@@ -76,8 +71,8 @@ Dự án này được cấp phép theo giấy phép MIT - xem tệp [LICENSE](L
 
 ## Liên hệ
 
-- *Email*: your-email@example.com
-- *Trang web*: [your-website.com](http://your-website.com)
-- *Facebook*: [facebook.com/yourpage](http://facebook.com/yourpage)
+- *Email*: minhhieutrumhoa@.com
+- *Trang web*: [your-website.com](https://www.facebook.com/profile.php?id=100052143682107)
+- *Facebook*: [facebook.com/yourpage](https://www.facebook.com/profile.php?id=100052143682107)
 
 Cảm ơn bạn đã quan tâm đến dự án của chúng tôi!
